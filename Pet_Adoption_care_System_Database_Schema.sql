@@ -8,14 +8,14 @@
 */
 
 -- Create Database
-IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'Pet_Adoption_Care_System')
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'Group82_Pet_Adoption_Care_System')
 BEGIN
-    CREATE DATABASE Pet_Adoption_Care_System;
+    CREATE DATABASE Group82_Pet_Adoption_Care_System;
 END;
 GO
 
 -- Use the Database
-USE Pet_Adoption_Care_System;
+USE Group82_Pet_Adoption_Care_System;
 GO
 
 -- Drop tables if exist (in reverse dependency order to avoid FK constraint errors)
