@@ -1,22 +1,17 @@
-/*
-    Project Title: Pet Adoption & Care System
-    Group Number: 82
-    Group Members: Rushi Vasantkumar Parikh, Mitali Kamal Bagadia
-    Course: IFT 530 - Arizona State University
-    Description: SQL Script to create database and tables for Pet Adoption & Care System.
-    Date: 04/27/2025
-*/
-
--- Create Database
-IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'Group82_Pet_Adoption_Care_System')
+-- Drop and Recreate Database
+IF EXISTS (SELECT * FROM sys.databases WHERE name = 'Group82_Pet_Adoption_Care_System')
 BEGIN
-    CREATE DATABASE Group82_Pet_Adoption_Care_System;
+    ALTER DATABASE Group82_Pet_Adoption_Care_System SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE Group82_Pet_Adoption_Care_System;
 END;
 GO
 
--- Use the Database
+CREATE DATABASE Group82_Pet_Adoption_Care_System;
+GO
+
 USE Group82_Pet_Adoption_Care_System;
 GO
+
 
 -- Drop tables if exist (in reverse dependency order to avoid FK constraint errors)
 IF OBJECT_ID('dbo.VetVisits', 'U') IS NOT NULL DROP TABLE dbo.VetVisits;
