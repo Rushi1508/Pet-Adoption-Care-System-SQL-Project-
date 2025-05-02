@@ -44,11 +44,10 @@ This project implements a full-featured **Pet Adoption & Care System** using SQL
 
 ## 📝 Author
 
-- Rushi V. Parikh
+- Rushi V. Parikh with co-author Mitali
 - Arizona State University – Tempe, AZ
 - Course: IFT 530 – Database Systems
 
 ---
 
 > Designed to be modular, re-runnable, and evaluation-ready 🚀
-# Pet-Adoption-Care-System-SQL-Project-
